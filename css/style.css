@@ -1,0 +1,29 @@
+/*state-1*/
+[data-vishnu="vishnu"]{
+    width: 200px;
+    height: 200px;
+    background:red;
+    border:5px solid black;
+    border-radius: 20px;
+    /*
+margin:t/r/b/l;
+
+margin:t/b l/r
+*/
+    margin:200px auto;
+    transform:scale(1,1) rotate(0deg) translate(0px,0px);
+/*
+    transition: property duration timing-function delay|initial|inherit;
+    */
+    transition: all 5s linear;
+}
+/*
+    element:hover{
+        property:value;
+    }
+*/
+[data-vishnu="vishnu"]:hover{
+    /*state 2*/
+    transform:scale(1.5,1.5) rotate(360deg) translate(200px,200px);
+    background: blue;
+}
